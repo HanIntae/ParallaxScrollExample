@@ -51,20 +51,4 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, MultipleParallaxListView.class);
 		startActivity(intent);
 	}
-	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.menu.main, menu);
-	    return true;
-	}
-	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		if (item.getItemId() == R.id.action_github) {
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/nirhart/ParallaxScroll"));
-			startActivity(browserIntent);
-		}
-		return true;
-	}
 }
